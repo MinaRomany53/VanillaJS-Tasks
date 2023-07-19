@@ -1,6 +1,6 @@
 # VanillJS Tasks | For Practicing 😁
 
-[![JavaScript](https://img.shields.io/badge/JavascriptES6-18.16.0-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![JavaScript](https://img.shields.io/badge/Javascript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
 ## Theme-Clock
