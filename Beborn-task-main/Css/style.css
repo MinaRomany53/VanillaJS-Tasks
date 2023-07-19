@@ -1,0 +1,316 @@
+@import url(./global-rules.css);
+body {
+  background-image: url(../images/bg-OPM.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+@media (max-width: 1200px) {
+  body {
+    background-image: none;
+  }
+}
+
+/* Start Header - Navbar */
+header {
+  width: 100%;
+  padding: 3rem 0 2rem 0;
+}
+
+header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.logo a {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10;
+}
+.mobile_btn {
+  display: none;
+  border: none;
+  font-size: 2.6rem;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 4rem;
+  padding-top: 0.2rem;
+  width: 4rem;
+  transition: transform 0.3s ease-out;
+}
+.mobile_btn .icon,
+.mobile_btn .icon-x {
+  z-index: 10;
+  color: #000;
+}
+
+@media (max-width: 786px) {
+  .mobile_btn {
+    display: block;
+    z-index: 10;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav .link-item {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-left: 4rem;
+}
+.nav .link-item .link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.nav .sign-btn .link {
+  background-color: #fff;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 2.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.nav .sign-btn .link:hover {
+  box-shadow: none;
+}
+@media (max-width: 786px) {
+  .nav {
+    padding: 1.5rem 2rem 2rem 2rem;
+    background-color: #e9e7e8;
+    border-radius: 5px;
+    position: absolute;
+    flex-direction: column;
+    top: 6rem;
+    left: 1rem;
+    width: calc(100% - 3rem);
+    transition: all 0.3s;
+    z-index: 10;
+  }
+  .nav .link-item {
+    height: 5.5rem;
+    margin-left: 0;
+  }
+  .nav .link-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .nav .sign-btn .link {
+    width: 100%;
+  }
+  .hidden {
+    transform: translateX(200%);
+  }
+  .show {
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+}
+/* End Header - Navbar */
+
+/* Start Main Landing */
+main {
+  padding: 10rem 0;
+}
+@media (max-width: 992px) {
+  main {
+    padding: 6rem 0;
+    text-align: center;
+  }
+}
+main .container {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1300px) {
+  main .container {
+    width: 75%;
+  }
+}
+@media (max-width: 992px) {
+  main .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  main .container {
+    width: 100%;
+  }
+}
+/* Start Landing-Form */
+.Landing-form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2.5rem;
+  max-width: 32rem;
+  border-radius: 5px;
+}
+@media (max-width: 992px) {
+  .Landing-form {
+    max-width: 50rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.Landing-form .Landing-form_header {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.Landing-form .form {
+  padding: 2rem 0 1.5rem 0;
+}
+.form input {
+  display: inline-block;
+  width: 100%;
+  height: 4rem;
+  border: none;
+  padding-left: 2rem;
+  border-radius: 5px;
+  margin: 0.8rem 0;
+  background-color: #f6f6f6;
+  font-size: 1.2rem;
+  caret-color: #915edf;
+}
+.form input:active,
+.form input:focus {
+  outline: none;
+  border: none;
+}
+.form input::placeholder {
+  font-size: 1.2rem;
+  color: #999;
+}
+.form .submit-btn {
+  margin-top: 1rem;
+  padding-left: 0;
+  background-color: #915edf;
+  color: #f3f3f3;
+}
+.Landing-form_info {
+  font-size: 1rem;
+  color: #999;
+}
+/* End Landing-Form */
+
+/*Start Landing-Content*/
+.Landing-content h1 {
+  margin: 0;
+  font-size: 4rem;
+  padding: 3rem 1rem 1.5rem 4rem;
+  line-height: 1.3;
+}
+.Landing-content p {
+  font-size: 1.6rem;
+  padding: 0rem 1rem 1.5rem 4rem;
+  line-height: 1.6;
+}
+.Landing-content .Landing-content-btns {
+  padding: 2.5rem 0rem 0rem 4rem;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .Landing-content .Landing-content-btns {
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .Landing-content h1 {
+    padding: 2rem 2rem;
+  }
+  .Landing-content p {
+    padding: 0 6rem;
+  }
+  .Landing-content .Landing-content-btns {
+    padding: 3rem 0;
+    justify-content: center;
+  }
+}
+.Landing-content-btns .play-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  margin-right: 4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.Landing-content-btns .play-btn:hover .play-btn-icon {
+  color: #915edf;
+}
+.play-btn-icon {
+  font-size: 2.5rem;
+  margin-left: 1.2rem;
+  transition: all 0.3s;
+}
+.Landing-content-btns .price-btn {
+  text-decoration: none;
+  padding: 1.2rem 4rem;
+  font-size: 1.2rem;
+  height: 4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 2.5rem;
+}
+/* End Landing-Content */
+/* End Main Landing */
+
+/* Buttons */
+.btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #915edf;
+  color: #f3f3f3;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.btn:hover {
+  box-shadow: none;
+  background-color: #8550d4;
+}
+
+/* Overlay */
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  /* background-color: rgba(0, 0, 0, 0.85); */
+  background-color: #e9e7e8;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 1;
+}
+@media (min-width: 786px) {
+  .overlay {
+    width: 0% !important;
+  }
+}

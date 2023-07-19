@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.header {
+  grid-area: head;
+  background-color: var(--color-grey-light-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3.5rem;
+  padding-right: 2rem;
+}
+.logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo__icon {
+  font-size: 2rem;
+  margin-right: 0.8rem;
+  background-image: var(--gradient);
+  border-radius: 50%;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo__text {
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: var(--color-grey-dark-1);
+}
+
+.search__form {
+  position: relative;
+  height: 5.5rem;
+  width: 50rem;
+  border-radius: 10rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all;
+}
+.search__form:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 0.7rem 3rem rgba(97, 85, 81, 0.1);
+}
+.search__field {
+  width: 100%;
+  height: 5.5rem;
+  font-family: inherit;
+  color: var(--color-grey-dark-1);
+  caret-color: var(--color-primary);
+  font-size: 1.7rem;
+  padding-left: 2rem;
+  border-radius: 10rem;
+  border-color: transparent;
+  transition: all 0.3s;
+}
+.search__field::placeholder {
+  font-size: 1.7rem;
+  color: var(--color-grey-light-3);
+}
+.search__field:active,
+.search__field:focus {
+  outline: none;
+}
+
+@media (max-width: 980px) {
+  .search__form {
+    width: 38rem;
+  }
+  .search__field::placeholder {
+    visibility: hidden;
+  }
+}
+.btn {
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--color-grey-dark-1);
+  transition: all 0.3s;
+}
+.btn:focus,
+.btn:active {
+  outline: none;
+}
+.search__btn {
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  background-image: var(--gradient);
+  width: 18rem;
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10rem;
+  right: 0;
+}
+.search__btn:hover {
+  transform: scale(1.05);
+}
+.search__btn .search__btn--icon {
+  font-size: 2rem;
+  margin-right: 0.8rem;
+}
+.search__btn span {
+  font-size: 1.4rem;
+}
+.nav {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-icon {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+.add__recipe--btn,
+.add__bookmarks--btn {
+  font-size: 1.4rem;
+  height: 100%;
+  padding: 0 1.5rem;
+}
+.add__recipe--btn:hover,
+.add__bookmarks--btn:hover {
+  background-color: var(--color-grey-light-2);
+}

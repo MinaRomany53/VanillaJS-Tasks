@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-primary: #000;
+}
+html {
+  font-size: 62.5%;
+  transition: all 0.5s ease-in;
+}
+html.dark {
+  background-color: #111;
+  color: var(--color-primary); /* convert this color with js */
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.theme__toggle--btn {
+  position: absolute;
+  top: 10rem;
+  background-color: var(--color-primary);
+  color: #fff; /* At Dark Mode #333 */
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.5rem;
+}
+.theme__toggle--btn:active {
+  transform: scale(0.98);
+}
+.theme__toggle--btn:focus {
+  outline: none;
+}
+.clock__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.clock {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+}
+.needle {
+  position: absolute;
+  background-color: var(--color-primary);
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  width: 0.3rem;
+  transform-origin: bottom center;
+}
+.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 30%;
+}
+.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  background-color: #e74c3c;
+}
+.center {
+  position: absolute;
+  background-color: #e74c3c;
+  top: 50%;
+  left: 50%;
+  height: 1rem;
+  width: 1rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.center::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--color-primary);
+  top: 50%;
+  left: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.time {
+  font-size: 6rem;
+}
+.date {
+  color: #aaa;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3;
+}
+.date .day__circle {
+  background-color: #e74c3c;
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

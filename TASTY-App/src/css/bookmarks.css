@@ -1,0 +1,129 @@
+.bookmarks {
+  max-height: 117rem;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: -5rem;
+  transform: translateY(100%);
+  padding: 1rem 0;
+  right: -2.5rem;
+  z-index: 10;
+  width: 40rem;
+  background-color: #fff;
+  box-shadow: 0 0.8rem 5rem 2rem rgba(97, 85, 81, 0.1);
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s 0.1s;
+}
+.bookmarks::-webkit-scrollbar {
+  width: 0rem;
+}
+.bookmarks__list {
+  list-style: none;
+}
+.bookmarks__message {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bookmarks__message--icon {
+  color: var(--color-primary);
+  font-size: 3.5rem;
+}
+.bookmarks__message p {
+  padding: 0 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+.bookmarks:hover,
+.add__bookmarks--btn:hover + .bookmarks {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0;
+}
+
+.preview {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.preview:hover {
+  background-color: var(--color-grey-light-1);
+  transform: translateY(-3%);
+}
+.preview__link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 1.5rem 3.25rem;
+}
+
+.preview__fig {
+  flex: 0 0 5.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 5.8rem;
+  margin-right: 2rem;
+  position: relative;
+  backface-visibility: hidden;
+}
+.preview__fig::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+  opacity: 0.4;
+}
+.preview__fig img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.preview__data {
+  position: relative;
+  width: 100%;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  transform: translateY(-8%);
+  font-weight: 600;
+
+  /* This is how text is truncated! */
+  text-overflow: ellipsis;
+  max-width: 25rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.preview__name {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+.preview__publisher {
+  color: var(--color-grey-dark-2);
+  font-size: 1.2rem;
+}
+.preview__user-generated {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--color-grey-light-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 10rem;
+
+  margin-left: auto;
+  margin-right: 1.75rem;
+}
+.preview__user-generated--icon {
+  color: var(--color-primary);
+  height: 1.5rem;
+  width: 1.5rem;
+}

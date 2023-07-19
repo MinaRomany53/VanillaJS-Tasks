@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Beborn</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Beborn Website" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Mina Romany" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!--Normailze helpful style sheet-->
+    <link rel="stylesheet" href="./Css/Normalize.css" />
+    <!-- Main Style File -->
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <!-- Start Header-->
+    <header>
+      <div class="container">
+        <div class="logo"><a href="#index.html">Beborn</a></div>
+        <button class="mobile_btn" id="mobile_btn" data-state="open">
+          <i class="fa-solid fa-bars icon"></i>
+        </button>
+        <ul class="nav hidden">
+          <li class="link-item">
+            <a href="#" class="link">Features</a>
+          </li>
+          <li class="link-item">
+            <a href="#" class="link">Pricing</a>
+          </li>
+          <li class="link-item">
+            <a href="#" class="link">Login</a>
+          </li>
+          <li class="link-item sign-btn">
+            <button class="link">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- Start Main Landing-->
+    <main>
+      <div class="container">
+        <div class="Landing-form">
+          <p class="Landing-form_header">Create an account</p>
+          <form action="" class="form">
+            <input type="text" required placeholder="Full name" />
+            <input type="text" required placeholder="User name" />
+            <input type="email" required placeholder="Email" />
+            <input type="password" required placeholder="Password" />
+            <input
+              type="submit"
+              class="btn submit-btn"
+              value="TRY IT FOR FREE"
+            />
+          </form>
+          <p class="Landing-form_info">
+            BY registering you agree to the envato Terms of Use
+          </p>
+        </div>
+
+        <div class="Landing-content">
+          <h1>Better Marketing Results With Clean Design</h1>
+          <p>
+            We have benn working very hard to create the new version of our
+            course. it comes with alot of new features. check it out now!
+          </p>
+          <div class="Landing-content-btns">
+            <a href="#" class="play-btn">
+              Play Video<i class="fa-regular fa-circle-play play-btn-icon"></i
+            ></a>
+            <a href="#" class="btn price-btn">See Our Price</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main Landing-->
+    <div class="overlay"></div>
+    <!-- Main Script File -->
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
