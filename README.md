@@ -21,13 +21,19 @@ https://bebornnn.netlify.app/
 ![screencapture-bebornnn-netlify-app-2023-07-19-09_37_55](https://github.com/MinaRomany53/VanillaJS-Tasks/assets/84532337/218a2018-f4bd-4da7-8499-9b72cc857c5a)
 
 
+## Roll The Dice Game
+https://rollthedicegamex.netlify.app/
+
+![screencapture-rollthedicegamex-netlify-app-2023-07-19-09_59_58](https://github.com/MinaRomany53/VanillaJS-Tasks/assets/84532337/db0d1b09-8638-48ab-8926-099b930f4f70)
+
+
 ## Auto-Text-effect
 https://autotexteffectx.netlify.app/
 
 ![screencapture-autotexteffectx-netlify-app-2023-07-19-09_42_36](https://github.com/MinaRomany53/VanillaJS-Tasks/assets/84532337/ad3d6ffa-b970-4b70-a11a-74eefd73d57c)
 
 
-## guessMyNumber
+## guessMyNumber Game
 https://guessmynumberx.netlify.app/
 
 ![screencapture-guessmynumberx-netlify-app-2023-07-19-09_44_51](https://github.com/MinaRomany53/VanillaJS-Tasks/assets/84532337/b8da4b69-16de-4b68-8a00-5c99e9dcd3b6)
